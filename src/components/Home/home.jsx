@@ -25,7 +25,7 @@ export function Home() {
     >
       <div>
         <div>
-          <span className="hello me-3">---HELLO </span>
+          <span className="hello me-3">HELLO </span>
         </div>
 
         <span>
