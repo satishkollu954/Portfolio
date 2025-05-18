@@ -1,0 +1,75 @@
+.nav {
+  height: 5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  border-bottom: 3px solid tomato;
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 2rem;
+}
+
+/* Desktop menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.menuItem:hover {
+  color: tomato;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid tomato;
+}
+
+/* Hamburger icon for mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 999;
+  }
+
+  .menu-open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menuItem {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+}

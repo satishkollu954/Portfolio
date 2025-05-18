@@ -1,0 +1,92 @@
+#About {
+  padding: 4rem 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.about {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 3px solid tomato;
+  margin-bottom: 2rem;
+  align-self: flex-end;
+  margin-right: 2rem;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-title,
+.about-highlight,
+.about-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.logo1,
+.bi-linkedin,
+.bi-github {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.logo1:hover,
+.bi-linkedin:hover,
+.bi-github:hover {
+  transform: scale(1.2);
+  color: tomato !important;
+}
+
+.skills {
+  margin-top: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.skills:hover {
+  box-shadow: 6px 6px 12px tomato;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about {
+    align-self: center;
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-title,
+  .about-highlight,
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .logo1,
+  .bi-linkedin,
+  .bi-github {
+    font-size: 1.6rem;
+  }
+
+  .skills {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}

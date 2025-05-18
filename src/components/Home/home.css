@@ -1,0 +1,70 @@
+.intro {
+  height: 100vh;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.hello {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.iam {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.surname {
+  color: white;
+}
+
+.iam1 {
+  color: white;
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.role {
+  font-weight: 600;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.boxshadow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.boxshadow:hover {
+  box-shadow: 6px 6px 12px tomato;
+}
+
+@media (max-width: 768px) {
+  .iam,
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .iam1 {
+    font-size: 1.2rem;
+  }
+
+  .hello {
+    font-size: 1rem;
+  }
+
+  .intro {
+    padding: 2rem 1rem;
+  }
+}
