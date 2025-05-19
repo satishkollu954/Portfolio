@@ -2,7 +2,7 @@ import "./skills.css";
 
 export function Skills() {
   const skills = [
-    { src: "atom.png", label: "React" },
+    { src: "atom.png", label: "ReactJs" },
     { src: "nodejs.png", label: "Node.js" },
     { src: "express.png", label: "Express.js" },
     { src: "js.png", label: "JavaScript" },
