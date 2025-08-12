@@ -13,7 +13,7 @@ export function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 2000);
+    }, 1500);
     return () => clearInterval(interval);
   }, []);
 

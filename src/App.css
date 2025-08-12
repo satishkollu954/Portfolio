@@ -17,7 +17,7 @@ body {
 }
 
 .hero-section {
-  background-image: url("/public/street.jpg");
+  background-image: url("/public/home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
