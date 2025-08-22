@@ -16,7 +16,8 @@
 }
 
 .underline {
-  border-bottom: 3px solid tomato;
+  border-bottom: 3px solid rgb(255, 59, 59);
+  border-radius: 5px;
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -112,6 +113,11 @@
 @media (max-width: 768px) {
   .contact-title {
     font-size: 2rem;
+    margin-bottom: 1rem; /* reduce gap under title */
+  }
+
+  .message-container {
+    margin-top: 1rem; /* tighten form spacing */
   }
 
   .contact-footer {

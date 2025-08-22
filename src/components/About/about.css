@@ -12,11 +12,19 @@
 .about {
   font-weight: bold;
   font-size: 1.5rem;
-  border-bottom: 3px solid tomato;
+  border-bottom: 3px solid rgb(255, 59, 59);
+  border-radius: 5px;
   margin-bottom: 2rem;
-  align-self: flex-end;
+  display: inline-block;   /* makes border fit only the text */
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  justify-content: flex-end; /* pushes the element to the right */
   margin-right: 2rem;
 }
+
 
 .about-content {
   max-width: 800px;

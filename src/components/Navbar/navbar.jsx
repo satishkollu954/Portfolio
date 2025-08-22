@@ -27,6 +27,9 @@ export function Navbar() {
         <Link to="skills" className="menuItem" onClick={closeMenu}>
           Skills
         </Link>
+        <Link to="projects" className="menuItem" onClick={closeMenu}>
+          Projects
+        </Link>
         <Link to="contact" className="menuItem" onClick={closeMenu}>
           Contact
         </Link>

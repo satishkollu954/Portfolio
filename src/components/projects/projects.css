@@ -1,0 +1,102 @@
+.projects-section {
+  padding: 4rem 2rem;
+  background: #111;
+  color: white;
+}
+
+.projects-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 3px solid rgb(255, 59, 59);
+  border-radius: 5px;
+  color: white;
+  display: inline-block;   /* keeps border length same as text */
+  margin-bottom: 3rem;
+}
+
+/* Make sure parent centers the child */
+.projects-container {
+  text-align: center;
+}
+
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image-link {
+  flex: 1;
+}
+
+.project-image {
+  width: 100%;              /* bigger than before */
+  height: 100;             /* taller than before */
+  border-radius: 16px;
+  border: 2px solid white;
+  object-fit: contain;         /* fills box, might crop edges */
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;           /* prevents overflow */
+}
+@media (max-width: 768px) {
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;  /* show full image on mobile */
+  }
+}
+
+
+
+
+
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.project-info .tech {
+  margin-top: 1rem;
+  font-style: italic;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-item,
+  .project-item.reverse {
+    flex-direction: column;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+}

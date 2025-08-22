@@ -10,10 +10,11 @@
 
 .logo {
   color: white;
-  border-bottom: 3px solid tomato;
+  border-bottom: 3px solid rgb(255, 59, 59);
   font-weight: bold;
   font-size: x-large;
   margin-left: 2rem;
+   border-radius: 5px;  
 }
 
 /* Desktop menu */

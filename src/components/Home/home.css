@@ -24,6 +24,7 @@
 .name {
   font-size: 4rem;
   font-weight: 700;
+  color: rgb(255, 59, 59)
 }
 
 .surname {
@@ -38,8 +39,9 @@
 }
 
 .role {
-  font-weight: 600;
+ 
   transition: opacity 0.5s ease-in-out;
+  color: rgb(255, 59, 59)
 }
 
 .boxshadow {
@@ -66,5 +68,44 @@
 
   .intro {
     padding: 2rem 1rem;
+  }
+}
+
+
+.role {
+  display: inline-block;
+  color: #ff3b3b;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animation when text enters from TOP */
+.slide-up {
+  animation: slideUp 0.6s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation when text enters from BOTTOM */
+.slide-down {
+  animation: slideDown 0.6s ease-in-out;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

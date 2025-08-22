@@ -9,7 +9,7 @@ export function Contact() {
 
       <div className="text-center mt-4">
         <h2 className="contact-title">
-          Let's Connect<span className="text-danger">!</span>
+          Let's Connect<span style={{ color: "rgb(255, 59, 59)" }}>!</span>
         </h2>
         <p className="contact-description">
           Build Bridges, Stay in Touch, and Grow Together!
